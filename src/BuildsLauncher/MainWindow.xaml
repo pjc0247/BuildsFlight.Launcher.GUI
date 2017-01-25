@@ -1,0 +1,17 @@
+﻿<Window x:Class="BuildsLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BuildsLauncher"
+        mc:Ignorable="d"
+        Title="BuildsFlight" Height="350" Width="525" ResizeMode="NoResize">
+    <Grid>
+        <ComboBox x:Name="targetVersion" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="targetVersion_SelectionChanged">
+        </ComboBox>
+        <Border BorderThickness="1" BorderBrush="Black" Height="265" Width="497" Margin="0" VerticalAlignment="Bottom">
+            <TextBlock x:Name="releaseNote" HorizontalAlignment="Left" Margin="5,5,0,0" TextWrapping="Wrap" Text="releaste note goes here" VerticalAlignment="Top" Height="249" Width="481"/>
+        </Border>
+        <Button x:Name="launchButton" Content="Start" HorizontalAlignment="Right" Margin="0,10,11,0" VerticalAlignment="Top" Width="83" Click="launchButton_Click"/>
+    </Grid>
+</Window>
